@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>emojis</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="surfing/1.gif">
     <style media="screen">
       @font-face {
       font-family: 'pc_seniorregular';
@@ -19,12 +20,23 @@
       border: 0;
     }
 
+    html {
+      background-color: skyblue;
+    }
+
     body {
-      font-size: 10px;
+      font-size: 18px;
       line-height: 2;
+      color: white;
       /* font-family: 'Space Mono', monospace; */
       font-family: 'pc_seniorregular';
-      background-image: url("cloud/download.jpg");
+      background-image: url("cloud/skyandsea.jpeg");
+      /* background-image: url("cloud/download.jpg"); */
+      background-attachment: fixed;
+      background-size: auto;
+    }
+    p {
+      margin: 0;
     }
 
     p::selection {
@@ -50,13 +62,13 @@
 
     .item {
       position: relative;
-      border: 1px dashed black;
+      border: 1px dashed white;
       /* background: white; */
       height: 50vw;
     }
 
     .item:hover {
-      border-radius: 30%;
+      background-color: ;
     }
 
     .item img {
@@ -210,7 +222,7 @@
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(surfing,800);
+    setTimeout(surfing,200);
     }
 
     function bunnygirls() {
@@ -222,7 +234,7 @@
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(bunnygirls,800);
+    setTimeout(bunnygirls,200);
     }
 
     function cloud() {
@@ -234,7 +246,7 @@
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(cloud,800);
+    setTimeout(cloud,200);
     }
 
     function cherryblossom() {
@@ -246,7 +258,7 @@
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(cherryblossom,800);
+    setTimeout(cherryblossom,200);
     }
 
 
