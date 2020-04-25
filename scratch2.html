@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>emojis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="surfing/1.gif">
+    <style media="screen">
+        @font-face {
+        font-family: 'pc_seniorregular';
+        src: url('pcsenior-webfont.woff2') format('woff2'),
+             url('pcsenior-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        html, body {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+
+        body {
+
+          font-size: 18px;
+          line-height: 2;
+          color: black;
+          /* font-family: 'Space Mono', monospace; */
+          font-family: 'pc_seniorregular';
+          /* background-image: url("cloud/skyandsea.jpeg"); */
+          /* background-image: url("cloud/download.jpg"); */
+          background-attachment: fixed;
+          background-size: cover;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        ::selection {
+          color: transparent;
+          text-shadow: 0 0 7px;
+        }
+
+        .gif {
+          display: none;
+        }
+
+        .grid-container {
+          position: relative;
+          padding: 30px 0;
+          display: grid;
+          grid-template-columns: auto;
+          grid-gap: 24px;
+          width:95vw;
+          margin: 0 auto;
+        }
+
+        .item {
+
+          background-color: gainsboro;
+          position: relative;
+          /* border: 1px dashed black; */
+          box-shadow:
+          0 -4px 0 0 gainsboro,
+          0 4px 0 0 gainsboro,
+          -4px 0 0 0 gainsboro,
+          4px 0 0 0 gainsboro,
+
+          0 0 0 4px whitesmoke,
+          0 -8px 0 0 whitesmoke,
+          0 8px 0 0 whitesmoke,
+          -8px 0 0 0 whitesmoke,
+          8px 0 0 0 whitesmoke;
+          /* background: white; */
+          height: 95vh;
+        }
+
+        .item:hover {
+          background-color: ;
+        }
+
+        .item img {
+          height: 128px;
+          /* height: 128px; */
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          image-rendering: pixelated;
+        }
+
+        .title {
+
+
+          box-shadow:
+          0 -4px 0 0 white,
+          0 4px 0 0 white,
+          -4px 0 0 0 white,
+          4px 0 0 0 white,
+
+          0 0 0 4px black,
+          0 -8px 0 0 black,
+          0 8px 0 0 black,
+          -8px 0 0 0 black,
+          8px 0 0 0 black;
+          margin: 30px auto;
+          padding: 0 5px;
+          width: 25vh;
+          height: auto;
+          /* text-align: center; */
+          /* position: relative; */
+
+        }
+
+      @media screen and (max-width: 992px) {
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto;
+        }
+
+        .item {
+          height: 100vh;
+        }
+
+        .item img {
+          width: 50vw;
+          transform: translate(-50%, -50%) rotate(90deg);
+          text-align: center;
+        }
+
+      .title {
+        transform: rotate(90deg);
+        width: 45vh;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body onload="run();">
+
+    <p style="text-align: center; padding: 40px 0; text-decoration: underline;">Please rotate your phone</p>
+      <div class="title" style="margin: 40vh auto;"> Welcome to the Gallery!
+       </div>
+
+       <div class="title" style="margin: 40vh auto;">
+         Thanks for participating the presentation of this project.
+         All I need you to help with is to choose one of the following images, ready to display it during
+         the crit via your phone.
+       </div>
+
+
+
+    <div class="grid-container">
+
+      <div class="item">
+        <img id="cloud">
+      </div>
+
+      <div class="item">
+        <img id="cherryblossom" >
+      </div>
+
+      <div class="item">
+        <img id="surfing" >
+      </div>
+
+      <div class="item">
+        <img id="bunnygirls" src="bunnygirls/1.gif" >
+      </div>
+
+      <div class="item">
+        <img id="smile" src="smile/1.gif">
+      </div>
+
+    </div>
+
+
+
+  </body>
+
+  <script type="text/javascript">
+        var cloud = [
+          "cloud/1.gif",
+          "cloud/2.gif",
+          "cloud/3.gif",
+          "cloud/4.gif",
+          "cloud/5.gif",
+          "cloud/6.gif",
+          "cloud/7.png",
+          "cloud/8.gif",
+          "cloud/9.gif",
+          "cloud/10.gif",
+          "cloud/11.png",
+          "cloud/12.gif",
+          "cloud/13.gif",
+          "cloud/15.gif",
+          "cloud/16.gif",
+          "cloud/17.gif",
+          "cloud/18.gif",
+          "cloud/19.gif",
+          "cloud/20.png"
+        ];
+
+        var smile = [
+          "smile/1.gif",
+          "smile/2.gif",
+          "smile/3.gif",
+          "smile/4.gif",
+          "smile/5.gif",
+          "smile/6.gif",
+          "smile/7.gif",
+          "smile/8.png",
+          "smile/9.png",
+          "smile/10.png",
+          "smile/11.png",
+          "smile/12.png",
+          "smile/13.png",
+          "smile/14.png",
+          "smile/15.gif",
+          "smile/16.gif",
+          "smile/17.png"
+          ];
+
+        var bunnygirls = [
+          "bunnygirls/1.gif",
+          "bunnygirls/2.gif",
+          "bunnygirls/3.gif" ,
+          "bunnygirls/4.gif",
+          "bunnygirls/5.png" ,
+          "bunnygirls/6.gif" ,
+          "bunnygirls/7.png" ,
+          "bunnygirls/8.png" ,
+          "bunnygirls/9.png" ,
+          "bunnygirls/10.png" ,
+          "bunnygirls/11.gif" ,
+          "bunnygirls/12.gif" ,
+          "bunnygirls/13.png"
+        ];
+
+        var surfing = [
+                "surfing/1.gif",
+                "surfing/2.gif",
+                "surfing/3.gif",
+                "surfing/5.gif",
+                "surfing/6.gif",
+                "surfing/7.gif",
+                "surfing/8.gif",
+                "surfing/9.png",
+                "surfing/10.gif",
+                "surfing/11.gif",
+                "surfing/12.png",
+                "surfing/13.png",
+                "surfing/14.png",
+                "surfing/15.png",
+                "surfing/16.png"
+        ];
+
+        var cherryblossom = [
+        "cherryblossom/1.gif",
+        "cherryblossom/2.gif",
+        "cherryblossom/3.gif",
+        "cherryblossom/4.gif",
+        "cherryblossom/5.gif",
+        "cherryblossom/6.gif",
+        "cherryblossom/7.gif",
+        "cherryblossom/8.gif",
+        "cherryblossom/9.png",
+        "cherryblossom/10.png",
+        "cherryblossom/11.png",
+        "cherryblossom/12.png",
+        "cherryblossom/13.png"
+        ]
+
+        var counter = 0;
+        function run(){
+          setInterval(cycle,160);
+        }
+
+
+        function cycle(){
+          counter++;
+
+          if(counter == cloud.length)
+          counter = 0;
+          document.getElementById("cloud").src = cloud[counter];
+
+          if(counter == smile.length)
+            counter = 0;
+          document.getElementById("smile").src = smile[counter];
+
+          if(counter == bunnygirls.length)
+          counter = 0;
+          document.getElementById("bunnygirls").src = bunnygirls[counter];
+
+          if(counter == surfing.length)
+          counter = 0;
+          document.getElementById("surfing").src = surfing[counter];
+
+          if(counter == cherryblossom.length)
+          counter = 0;
+          document.getElementById("cherryblossom").src = cherryblossom[counter];
+        }
+
+
+  </script>
+
+</html>

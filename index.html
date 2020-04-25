@@ -86,7 +86,7 @@
     }
 
     .item img {
-
+      width: 128px;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -193,7 +193,6 @@
         <img class="cloud" src="cloud/18.gif" >
         <img class="cloud" src="cloud/19.gif" >
         <img class="cloud" src="cloud/20.png" >
-
       </div>
 
       <div class="item">
@@ -214,33 +213,19 @@
 
       <div class="item">
         <img class="surfing" src="surfing/1.gif" >
-
         <img class="surfing" src="surfing/2.gif" >
-
         <img class="surfing" src="surfing/3.gif" >
-
         <img class="surfing" src="surfing/5.gif" >
-
         <img class="surfing" src="surfing/6.gif" >
-
         <img class="surfing" src="surfing/7.gif" >
-
         <img class="surfing" src="surfing/8.gif" >
-
         <img class="surfing" src="surfing/9.png" >
-
         <img class="surfing" src="surfing/10.gif" >
-
         <img class="surfing" src="surfing/11.gif" >
-
         <img class="surfing" src="surfing/12.png" >
-
         <img class="surfing" src="surfing/13.png" >
-
         <img class="surfing" src="surfing/14.png" >
-
         <img class="surfing" src="surfing/15.png" >
-
         <img class="surfing" src="surfing/16.png" >
       </div>
 
@@ -249,8 +234,8 @@
         <img class="bunnygirls" src="bunnygirls/2.gif" >
         <img class="bunnygirls" src="bunnygirls/3.gif" >
         <img class="bunnygirls" src="bunnygirls/4.gif" >
-        <img class="bunnygirls" src="bunnygirls/5.png" >
         <img class="bunnygirls" src="bunnygirls/6.gif" >
+        <img class="bunnygirls" src="bunnygirls/5.png" >
         <img class="bunnygirls" src="bunnygirls/7.png" >
         <img class="bunnygirls" src="bunnygirls/8.png" >
         <img class="bunnygirls" src="bunnygirls/9.png" >
@@ -260,6 +245,25 @@
         <img class="bunnygirls" src="bunnygirls/13.png" >
       </div>
 
+      <div class="item">
+        <img class="smile" src="smile/1.gif">
+        <img class="smile" src="smile/2.gif">
+        <img class="smile" src="smile/3.gif">
+        <img class="smile" src="smile/4.gif">
+        <img class="smile" src="smile/5.gif">
+        <img class="smile" src="smile/6.gif">
+        <img class="smile" src="smile/7.gif">
+        <img class="smile" src="smile/8.png">
+        <img class="smile" src="smile/9.png">
+        <img class="smile" src="smile/10.png">
+        <img class="smile" src="smile/11.png">
+        <img class="smile" src="smile/12.png">
+        <img class="smile" src="smile/13.png">
+        <img class="smile" src="smile/14.gif">
+        <img class="smile" src="smile/15.gif">
+        <img class="smile" src="smile/16.gif">
+        <img class="smile" src="smile/17.png">
+      </div>
 
     </div>
 
@@ -273,6 +277,8 @@
     bunnygirls();
     cloud();
     cherryblossom();
+    smile ();
+
 
     function surfing() {
       var i;
@@ -322,6 +328,18 @@
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
     setTimeout(bunnygirls,600);
+    }
+
+    function smile() {
+      var i;
+      var x = document.getElementsByClassName ("smile");
+      for ( i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(smile,1000);
     }
 
 
