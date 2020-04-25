@@ -20,27 +20,25 @@
       border: 0;
     }
 
-    html {
-      background-color: skyblue;
-    }
-
     body {
       font-size: 18px;
       line-height: 2;
-      color: white;
+      color: black;
       /* font-family: 'Space Mono', monospace; */
       font-family: 'pc_seniorregular';
-      background-image: url("cloud/skyandsea.jpeg");
+      /* background-image: url("cloud/skyandsea.jpeg"); */
       /* background-image: url("cloud/download.jpg"); */
       background-attachment: fixed;
       background-size: cover;
     }
+
     p {
       margin: 0;
     }
 
-    p::selection {
-      color: white;
+    ::selection {
+      color: transparent;
+      text-shadow: 0 0 7px;
     }
 
     .text-container p {
@@ -53,18 +51,32 @@
     }
 
     .grid-container {
+      position: relative;
+      padding: 30px;
       display: grid;
       grid-template-columns: auto auto auto;
-      grid-gap: 10px;
+      grid-gap: 40px;
       width:90vw;
       margin: 0 auto;
     }
 
     .item {
       position: relative;
-      border: 1px dashed white;
+      /* border: 1px dashed black; */
+      box-shadow:
+      0 -4px 0 0 white,
+      0 4px 0 0 white,
+      -4px 0 0 0 white,
+      4px 0 0 0 white,
+
+      0 0 0 4px black,
+      0 -8px 0 0 black,
+      0 8px 0 0 black,
+      -8px 0 0 0 black,
+      8px 0 0 0 black;
+
       /* background: white; */
-      height: 50vw;
+      height: 90vh;
     }
 
     .item:hover {
@@ -72,11 +84,32 @@
     }
 
     .item img {
-      width: 36px;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      image-rendering: pixelated;
+    }
+
+    .title {
+      box-shadow:
+      0 -4px 0 0 white,
+      0 4px 0 0 white,
+      -4px 0 0 0 white,
+      4px 0 0 0 white,
+
+      0 0 0 4px black,
+      0 -8px 0 0 black,
+      0 8px 0 0 black,
+      -8px 0 0 0 black,
+      8px 0 0 0 black;
+      margin: 30px auto;
+      padding: 0 5px;
+      width: 50vw;
+      height: auto;
+      text-align: center;
+      position: relative;
+
     }
 
 @media screen and (max-width: 992px) {
@@ -89,6 +122,13 @@
     height: 80vh;
   }
 
+  .item img {
+    width: 50vw;
+  }
+
+.title {
+  width: 60vw;
+}
 }
 
     </style>
@@ -96,8 +136,18 @@
 
   <body>
     <p style="text-align: center; padding: 40px 0; text-decoration: underline;">RETRIEVING A SMILE</p>
+      <div class="title"> Welcome to the Gallery!
+       </div>
+
+       <div class="title">
+         Thanks for participating the presentation of this project.
+         All I need you to help with is to choose one of the following images, ready to display it during
+         the crit via your phone.
+       </div>
+
+
     <div class="text-container">
-          <p>
+          <!-- <p>
             19-Sep-1982 11:44 Scott E Fahlman <br>
             From: Scott E Fahlman  &#x3c;Fahlman at Cmu-20c&#62; <br>
             I propose that the following character sequence for joke makers: <br>
@@ -105,8 +155,12 @@
             Read it sideways. Actually, it is probably more economical to mark things that are NOT jokes,
             given current trends. For this, use <br>
             :-(
-          </p>
-        </div>
+          </p> -->
+          <!-- <p> Hello World! <br> -->
+          <!-- </p> -->
+
+
+    </div>
 
 
     <div class="grid-container">
@@ -184,31 +238,18 @@
 
       <div class="item">
         <img class="bunnygirls" src="bunnygirls/1.gif" >
-
         <img class="bunnygirls" src="bunnygirls/2.gif" >
-
         <img class="bunnygirls" src="bunnygirls/3.gif" >
-
         <img class="bunnygirls" src="bunnygirls/4.gif" >
-
         <img class="bunnygirls" src="bunnygirls/5.png" >
-
         <img class="bunnygirls" src="bunnygirls/6.gif" >
-
         <img class="bunnygirls" src="bunnygirls/7.png" >
-
         <img class="bunnygirls" src="bunnygirls/8.png" >
-
         <img class="bunnygirls" src="bunnygirls/9.png" >
-
         <img class="bunnygirls" src="bunnygirls/10.png" >
-
         <img class="bunnygirls" src="bunnygirls/11.gif" >
-
         <img class="bunnygirls" src="bunnygirls/12.gif" >
-
         <img class="bunnygirls" src="bunnygirls/13.png" >
-
       </div>
 
 
@@ -237,17 +278,6 @@
     setTimeout(surfing,200);
     }
 
-    function bunnygirls() {
-      var i;
-      var x = document.getElementsByClassName ("bunnygirls");
-      for ( i = 0; i < x.length; i++ ) {
-        x[i].style.display = "none";
-      }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(bunnygirls,200);
-    }
 
     function cloud() {
       var i;
@@ -271,6 +301,19 @@
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
     setTimeout(cherryblossom,200);
+    }
+
+
+    function bunnygirls() {
+      var i;
+      var x = document.getElementsByClassName ("bunnygirls");
+      for ( i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(bunnygirls,600);
     }
 
 
