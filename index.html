@@ -31,9 +31,6 @@
         background-size: cover;
       }
 
-      p {
-        margin: 0;
-      }
 
       ::selection {
         color: transparent;
@@ -118,6 +115,35 @@
         margin: 360px auto;
       }
 
+      a {
+        color: black;
+        background-color: white;
+        font-size: 27px;
+        position: fixed;
+        left: 30px;
+        bottom: 30px;
+        width: 80px;
+        height: 40px;
+        box-shadow:
+        0 -8px 0 0 white,
+        0 8px 0 0 white,
+        -8px 0 0 0 white,
+        8px 0 0 0 white,
+        0 0 0 8px black,
+        0 -16px 0 0 black,
+        0 16px 0 0 black,
+        -16px 0 0 0 black,
+        16px 0 0 0 black;
+      }
+
+      p {
+        font-size: 14px;
+        text-align: center;
+        margin: 200px auto ;
+        width: 80vw;
+      }
+
+
       @media screen and (max-width: 992px) {
         body {
           font-size: 48px;
@@ -152,20 +178,32 @@
           width: 80vw;
           margin:10vh auto;
         }
+
+        a {
+          transform: translate(-10%, -70%) rotate(90deg);
+        }
+
+        p {
+          transform:  rotate(90deg);
+          margin-bottom: 800px ;
+        }
       }
     </style>
   </head>
 
-  <body>
-    <div class="text" >
+  <body id="top">
+    <a href="#top">
+      top
+    </a>
+
+    <div class="text"  >
       Thanks for participating in this project.
       What I need you to help with is to select one of the images below and prepare it to be displayed during
       the crit via your phone.
     </div>
 
     <div class="text" >Please rotate your phone <br>and scroll &#8595;</div>
-      <div class="title" > Welcome to the Gallery!
-       </div>
+    <div class="title" > Welcome to the Gallery!</div>
 
 
 
@@ -611,10 +649,11 @@
         <img class="telephone" src="telephone/19.gif">
         <img class="telephone" src="telephone/20.png">
       </div>
-
-
-
     </div>
+    <p> thank you for viewing, this is the end. <br>
+      © 2020 mianwei.wang. special thanks to mengyi.qian
+      </p>
+
   </body>
 
   <script type="text/javascript">
