@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>emojis</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="icon" href="surfing/1.gif">
     <style media="screen">
       @font-face {
@@ -21,7 +21,6 @@
     }
 
     body {
-
       font-size: 18px;
       line-height: 2;
       color: black;
@@ -62,7 +61,6 @@
     }
 
     .item {
-
       background-color: gainsboro;
       position: relative;
       /* border: 1px dashed black; */
@@ -95,8 +93,6 @@
     }
 
     .title {
-
-
       box-shadow:
       0 -4px 0 0 white,
       0 4px 0 0 white,
@@ -114,30 +110,29 @@
       height: auto;
       /* text-align: center; */
       /* position: relative; */
-
     }
 
-@media screen and (max-width: 992px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto;
-  }
+  @media screen and (max-width: 992px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+    }
 
-  .item {
-    height: 100vh;
-  }
+    .item {
+      height: 100vh;
+    }
 
-  .item img {
-    width: 50vw;
-    transform: translate(-50%, -50%) rotate(90deg);
-    text-align: center;
-  }
+    .item img {
+      width: 50vw;
+      transform: translate(-50%, -50%) rotate(90deg);
+      text-align: center;
+    }
 
-.title {
-  transform: rotate(90deg);
-  width: 45vh;
+    .title {
+      transform: rotate(90deg);
+      width: 45vh;
+    }
   }
-}
 
     </style>
   </head>
@@ -153,7 +148,6 @@
          the crit via your phone.
        </div>
 
-
     <div class="text-container">
           <!-- <p>
             19-Sep-1982 11:44 Scott E Fahlman <br>
@@ -167,9 +161,7 @@
           <!-- <p> Hello World! <br> -->
           <!-- </p> -->
 
-
     </div>
-
 
     <div class="grid-container">
 
@@ -259,20 +251,77 @@
         <img class="smile" src="smile/11.png">
         <img class="smile" src="smile/12.png">
         <img class="smile" src="smile/13.png">
-        <img class="smile" src="smile/14.gif">
+        <img class="smile" src="smile/14.png">
         <img class="smile" src="smile/15.gif">
         <img class="smile" src="smile/16.gif">
         <img class="smile" src="smile/17.png">
       </div>
-
     </div>
-
-
-
   </body>
 
   <script type="text/javascript">
-    var myIndex = 0;
+
+    var surfingIndex = 0;
+    function surfing() {
+      var x = document.getElementsByClassName ("surfing");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      surfingIndex++;
+      if (surfingIndex > x.length) {surfingIndex = 1}
+      x[surfingIndex-1].style.display = "block";
+      setTimeout(surfing,500);
+    }
+
+    var cloudIndex = 0;
+    function cloud() {
+      var x = document.getElementsByClassName ("cloud");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      cloudIndex++;
+      if (cloudIndex > x.length) {cloudIndex = 1}
+      x[cloudIndex-1].style.display = "block";
+      setTimeout(cloud,500);
+    }
+
+    var cherryblossomIndex = 0;
+    function cherryblossom() {
+      var x = document.getElementsByClassName ("cherryblossom");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      cherryblossomIndex++;
+      if (cherryblossomIndex > x.length) {cherryblossomIndex = 1}
+      x[cherryblossomIndex-1].style.display = "block";
+      setTimeout(cherryblossom,500);
+    }
+
+    var bunnygirlsIndex = 0;
+    function bunnygirls() {
+      var x = document.getElementsByClassName ("bunnygirls");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      bunnygirlsIndex++;
+      if (bunnygirlsIndex > x.length) {bunnygirlsIndex = 1}
+      x[bunnygirlsIndex-1].style.display = "block";
+      // console.log(x[bunnygirlsIndex-1]);
+      setTimeout(bunnygirls,500);
+    }
+
+    var smileIndex = 0;
+    function smile() {
+      var x = document.getElementsByClassName ("smile");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      smileIndex++;
+      if (smileIndex > x.length) {smileIndex = 1}
+      x[smileIndex-1].style.display = "block";
+      setTimeout(smile,500);
+    }
+
     surfing();
     bunnygirls();
     cloud();
@@ -280,67 +329,9 @@
     smile ();
 
 
-    function surfing() {
-      var i;
-      var x = document.getElementsByClassName ("surfing");
-      for ( i = 0; i < x.length; i++ ) {
-        x[i].style.display = "none";
-      }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(surfing,200);
-    }
 
 
-    function cloud() {
-      var i;
-      var x = document.getElementsByClassName ("cloud");
-      for ( i = 0; i < x.length; i++ ) {
-        x[i].style.display = "none";
-      }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(cloud,200);
-    }
 
-    function cherryblossom() {
-      var i;
-      var x = document.getElementsByClassName ("cherryblossom");
-      for ( i = 0; i < x.length; i++ ) {
-        x[i].style.display = "none";
-      }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(cherryblossom,200);
-    }
-
-
-    function bunnygirls() {
-      var i;
-      var x = document.getElementsByClassName ("bunnygirls");
-      for ( i = 0; i < x.length; i++ ) {
-        x[i].style.display = "none";
-      }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(bunnygirls,600);
-    }
-
-    function smile() {
-      var i;
-      var x = document.getElementsByClassName ("smile");
-      for ( i = 0; i < x.length; i++ ) {
-        x[i].style.display = "none";
-      }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(smile,1000);
-    }
 
 
   </script>
