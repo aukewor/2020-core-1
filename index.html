@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>emojis</title>
+    <title>emoji gallery</title>
     <link rel="icon" href="surfing/1.gif">
     <style media="screen">
       @font-face {
       font-family: 'pc_seniorregular';
-      src: url('pcsenior-webfont.woff2') format('woff2'),
-           url('pcsenior-webfont.woff') format('woff');
+      src: url('assets/pcsenior-webfont.woff2') format('woff2'),
+           url('assets/pcsenior-webfont.woff') format('woff');
       font-weight: normal;
       font-style: normal;
       }
@@ -54,17 +54,17 @@
         padding: 30px 0;
         display: grid;
         grid-template-columns: auto;
-        grid-gap: 24px;
+        grid-gap: 12px;
         width:95vw;
         margin: 0 auto;
       }
 
       .item {
-        background-color: gainsboro;
+        /* background-color: gainsboro; */
         position: relative;
         /* border: 1px dashed black; */
         box-shadow:
-        0 -4px 0 0 gainsboro,
+        /* 0 -4px 0 0 gainsboro,
         0 4px 0 0 gainsboro,
         -4px 0 0 0 gainsboro,
         4px 0 0 0 gainsboro,
@@ -73,8 +73,18 @@
         0 -8px 0 0 whitesmoke,
         0 8px 0 0 whitesmoke,
         -8px 0 0 0 whitesmoke,
-        8px 0 0 0 whitesmoke;
-        /* background: white; */
+        8px 0 0 0 whitesmoke; */
+        0 -4px 0 0 white,
+        0 4px 0 0 white,
+        -4px 0 0 0 white,
+        4px 0 0 0 white,
+
+        0 0 0 4px black,
+        0 -8px 0 0 black,
+        0 8px 0 0 black,
+        -8px 0 0 0 black,
+        8px 0 0 0 black;
+
         height: 95vh;
       }
 
@@ -107,7 +117,7 @@
         padding: 0 5px;
         width: 25vh;
         height: auto;
-        /* text-align: center; */
+        text-align: center;
         /* position: relative; */
       }
 
@@ -140,9 +150,9 @@
       <div class="title" style="margin: 40vh auto;"> Welcome to the Gallery!
        </div>
 
-       <div class="title" style="margin: 40vh auto;">
-         Thanks for participating the presentation of this project.
-         All I need you to help with is to choose one of the following images, ready to display it during
+       <div class="title" style="margin: 400px auto;">
+         Thanks for participating in this project.
+         All I need you to help with is to select one of the images below and prepare it to be displayed during
          the crit via your phone.
        </div>
 
@@ -232,6 +242,22 @@
       </div>
 
       <div class="item">
+        <img class="fire" src="fire/1.gif">
+        <img class="fire" src="fire/2.gif">
+        <img class="fire" src="fire/3.gif">
+        <img class="fire" src="fire/4.png">
+        <img class="fire" src="fire/5.gif">
+        <img class="fire" src="fire/6.gif">
+        <img class="fire" src="fire/7.gif">
+        <img class="fire" src="fire/8.png">
+        <img class="fire" src="fire/9.png">
+        <img class="fire" src="fire/10.png">
+        <img class="fire" src="fire/11.png">
+        <img class="fire" src="fire/12.png">
+      </div>
+
+
+      <div class="item">
         <img class="cherryblossom" src="cherryblossom/1.gif" >
         <img class="cherryblossom" src="cherryblossom/2.gif" >
         <img class="cherryblossom" src="cherryblossom/3.gif" >
@@ -263,6 +289,44 @@
         <img class="rose" src="rose/12.png">
         <img class="rose" src="rose/13.png">
       </div>
+
+      <div class="item">
+        <img class="snowman" src="snowman/1.gif">
+        <img class="snowman" src="snowman/2.gif">
+        <img class="snowman" src="snowman/3.gif">
+        <img class="snowman" src="snowman/4.gif">
+        <img class="snowman" src="snowman/5.gif">
+        <img class="snowman" src="snowman/6.gif">
+        <img class="snowman" src="snowman/7.gif">
+        <img class="snowman" src="snowman/8.gif">
+        <img class="snowman" src="snowman/9.gif">
+        <img class="snowman" src="snowman/10.gif">
+        <img class="snowman" src="snowman/11.png">
+        <img class="snowman" src="snowman/12.png">
+        <img class="snowman" src="snowman/13.png">
+        <img class="snowman" src="snowman/14.png">
+        <img class="snowman" src="snowman/15.png">
+        <img class="snowman" src="snowman/16.png">
+      </div>
+
+      <div class="item">
+        <img class="fuji" src="fuji/1.gif">
+        <img class="fuji" src="fuji/2.gif">
+        <img class="fuji" src="fuji/3.gif">
+        <img class="fuji" src="fuji/4.gif">
+        <img class="fuji" src="fuji/5.gif">
+        <img class="fuji" src="fuji/6.gif">
+        <img class="fuji" src="fuji/7.gif">
+        <img class="fuji" src="fuji/8.png">
+        <img class="fuji" src="fuji/9.gif">
+        <img class="fuji" src="fuji/10.gif">
+        <img class="fuji" src="fuji/11.png">
+        <img class="fuji" src="fuji/12.png">
+        <img class="fuji" src="fuji/13.png">
+        <img class="fuji" src="fuji/14.png">
+        <img class="fuji" src="fuji/15.png">
+      </div>
+
 
       <div class="item">
         <img class="ski" src="ski/1.gif">
@@ -317,6 +381,7 @@
         <img class="bunnygirls" src="bunnygirls/13.png" >
       </div>
 
+
       <div class="item">
         <img class="music" src="music/1.gif">
         <img class="music" src="music/2.gif">
@@ -337,6 +402,7 @@
         <img class="music" src="music/17.png">
         <img class="music" src="music/18.png">
       </div>
+
 
 
       <div class="item">
@@ -362,6 +428,19 @@
         <img class="heart" src="heart/20.png">
       </div>
 
+      <div class="item">
+        <img class="poo" src="poo/1.gif">
+        <img class="poo" src="poo/2.gif">
+        <img class="poo" src="poo/3.gif">
+        <img class="poo" src="poo/4.gif">
+        <img class="poo" src="poo/5.gif">
+        <img class="poo" src="poo/6.png">
+        <img class="poo" src="poo/7.png">
+        <img class="poo" src="poo/8.png">
+        <img class="poo" src="poo/9.png">
+        <img class="poo" src="poo/10.png">
+        <img class="poo" src="poo/11.png">
+      </div>
 
 
       <div class="item">
@@ -403,6 +482,77 @@
         <img class="sad" src="sad/16.png">
       </div>
 
+      <div class="item">
+        <img class="penguin" src="penguin/1.gif">
+        <img class="penguin" src="penguin/2.gif">
+        <img class="penguin" src="penguin/3.gif">
+        <img class="penguin" src="penguin/4.gif">
+        <img class="penguin" src="penguin/5.gif">
+        <img class="penguin" src="penguin/6.gif">
+        <img class="penguin" src="penguin/7.gif">
+        <img class="penguin" src="penguin/8.gif">
+        <img class="penguin" src="penguin/9.gif">
+        <img class="penguin" src="penguin/10.gif">
+        <img class="penguin" src="penguin/11.gif">
+        <img class="penguin" src="penguin/12.png">
+        <img class="penguin" src="penguin/13.png">
+        <img class="penguin" src="penguin/14.png">
+        <img class="penguin" src="penguin/15.png">
+        <img class="penguin" src="penguin/16.png">
+      </div>
+
+      <div class="item">
+        <img class="whale" src="whale/1.gif">
+        <img class="whale" src="whale/2.gif">
+        <img class="whale" src="whale/3.gif">
+        <img class="whale" src="whale/4.gif">
+        <img class="whale" src="whale/5.gif">
+        <img class="whale" src="whale/6.gif">
+        <img class="whale" src="whale/7.gif">
+        <img class="whale" src="whale/8.gif">
+        <img class="whale" src="whale/9.png">
+        <img class="whale" src="whale/10.png">
+        <img class="whale" src="whale/11.png">
+        <img class="whale" src="whale/12.png">
+        <img class="whale" src="whale/13.png">
+        <img class="whale" src="whale/14.png">
+      </div>
+
+      <div class="item">
+        <img class="house" src="house/1.gif">
+        <img class="house" src="house/2.gif">
+        <img class="house" src="house/3.gif">
+        <img class="house" src="house/4.gif">
+        <img class="house" src="house/5.gif">
+        <img class="house" src="house/6.gif">
+        <img class="house" src="house/7.gif">
+        <img class="house" src="house/8.gif">
+        <img class="house" src="house/9.gif">
+        <img class="house" src="house/10.gif">
+        <img class="house" src="house/11.gif">
+        <img class="house" src="house/12.png">
+        <img class="house" src="house/13.gif">
+        <img class="house" src="house/14.gif">
+        <img class="house" src="house/15.png">
+        <img class="house" src="house/16.png">
+        <img class="house" src="house/17.png">
+        <img class="house" src="house/18.png">
+        <img class="house" src="house/19.png">
+      </div>
+
+      <div class="item">
+        <img class="coffee" src="coffee/1.gif">
+        <img class="coffee" src="coffee/2.gif">
+        <img class="coffee" src="coffee/3.gif">
+        <img class="coffee" src="coffee/4.gif">
+        <img class="coffee" src="coffee/5.gif">
+        <img class="coffee" src="coffee/6.gif">
+        <img class="coffee" src="coffee/7.gif">
+        <img class="coffee" src="coffee/8.png">
+        <img class="coffee" src="coffee/9.png">
+        <img class="coffee" src="coffee/10.png">
+        <img class="coffee" src="coffee/11.png">
+      </div>
 
 
       <div class="item">
@@ -447,6 +597,8 @@
         <img class="telephone" src="telephone/19.gif">
         <img class="telephone" src="telephone/20.png">
       </div>
+
+
 
     </div>
   </body>
@@ -634,6 +786,102 @@
       setTimeout(music,160);
     }
 
+    var snowmanIndex = 0;
+    function snowman() {
+      var x = document.getElementsByClassName ("snowman");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      snowmanIndex++;
+      if (snowmanIndex > x.length) {snowmanIndex = 1}
+      x[snowmanIndex-1].style.display = "block";
+      setTimeout(snowman,160);
+    }
+
+    var pooIndex = 0;
+    function poo() {
+      var x = document.getElementsByClassName ("poo");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      pooIndex++;
+      if (pooIndex > x.length) {pooIndex = 1}
+      x[pooIndex-1].style.display = "block";
+      setTimeout(poo,160);
+    }
+
+    var penguinIndex = 0;
+    function penguin() {
+      var x = document.getElementsByClassName ("penguin");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      penguinIndex++;
+      if (penguinIndex > x.length) {penguinIndex = 1}
+      x[penguinIndex-1].style.display = "block";
+      setTimeout(penguin,160);
+    }
+
+    var whaleIndex = 0;
+    function whale() {
+      var x = document.getElementsByClassName ("whale");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      whaleIndex++;
+      if (whaleIndex > x.length) {whaleIndex = 1}
+      x[whaleIndex-1].style.display = "block";
+      setTimeout(whale,160);
+    }
+
+    var fireIndex = 0;
+    function fire() {
+      var x = document.getElementsByClassName ("fire");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      fireIndex++;
+      if (fireIndex > x.length) {fireIndex = 1}
+      x[fireIndex-1].style.display = "block";
+      setTimeout(fire,160);
+    }
+
+    var houseIndex = 0;
+    function house() {
+      var x = document.getElementsByClassName ("house");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      houseIndex++;
+      if (houseIndex > x.length) {houseIndex = 1}
+      x[houseIndex-1].style.display = "block";
+      setTimeout(house,160);
+    }
+
+    var fujiIndex = 0;
+    function fuji() {
+      var x = document.getElementsByClassName ("fuji");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      fujiIndex++;
+      if (fujiIndex > x.length) {fujiIndex = 1}
+      x[fujiIndex-1].style.display = "block";
+      setTimeout(fuji,160);
+    }
+
+    var coffeeIndex = 0;
+    function coffee() {
+      var x = document.getElementsByClassName ("coffee");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      coffeeIndex++;
+      if (coffeeIndex > x.length) {coffeeIndex = 1}
+      x[coffeeIndex-1].style.display = "block";
+      setTimeout(coffee,160);
+    }
+
 
     surfing();
     bunnygirls();
@@ -650,8 +898,14 @@
     raining();
     sun();
     music();
-
-
+    snowman();
+    poo();
+    penguin();
+    whale();
+    fire();
+    house();
+    fuji();
+    coffee();
 
 
   </script>
