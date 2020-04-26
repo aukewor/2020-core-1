@@ -1,5 +1,9 @@
 
 
+
+
+
+
 var templateIndex = 0;
 function template() {
   var x = document.getElementsByClassName ("template");
