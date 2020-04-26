@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>emojis</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="icon" href="surfing/1.gif">
+    <script type="text/javascript" src="script.js"></script>
     <style media="screen">
       @font-face {
       font-family: 'pc_seniorregular';
@@ -14,131 +14,130 @@
       font-style: normal;
       }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      border: 0;
-    }
+      html, body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
 
-    body {
-      font-size: 18px;
-      line-height: 2;
-      color: black;
-      /* font-family: 'Space Mono', monospace; */
-      font-family: 'pc_seniorregular';
-      /* background-image: url("cloud/skyandsea.jpeg"); */
-      /* background-image: url("cloud/download.jpg"); */
-      background-attachment: fixed;
-      background-size: cover;
-    }
+      body {
+        font-size: 18px;
+        line-height: 2;
+        color: black;
+        /* font-family: 'Space Mono', monospace; */
+        font-family: 'pc_seniorregular';
+        /* background-image: url("cloud/skyandsea.jpeg"); */
+        /* background-image: url("cloud/download.jpg"); */
+        background-attachment: fixed;
+        background-size: cover;
+      }
 
-    p {
-      margin: 0;
-    }
+      p {
+        margin: 0;
+      }
 
-    ::selection {
-      color: transparent;
-      text-shadow: 0 0 7px;
-    }
+      ::selection {
+        color: transparent;
+        text-shadow: 0 0 7px;
+      }
 
-    .text-container p {
-      margin: 60px auto;
-      width: 60vw;
-    }
+      .text-container p {
+        margin: 60px auto;
+        width: 60vw;
+      }
 
-    .gif {
-      display: none;
-    }
+      .gif {
+        display: none;
+      }
 
-    .grid-container {
-      position: relative;
-      padding: 30px 0;
-      display: grid;
-      grid-template-columns: auto;
-      grid-gap: 24px;
-      width:95vw;
-      margin: 0 auto;
-    }
+      .grid-container {
+        position: relative;
+        padding: 30px 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 24px;
+        width:95vw;
+        margin: 0 auto;
+      }
 
-    .item {
-      background-color: gainsboro;
-      position: relative;
-      /* border: 1px dashed black; */
-      box-shadow:
-      0 -4px 0 0 gainsboro,
-      0 4px 0 0 gainsboro,
-      -4px 0 0 0 gainsboro,
-      4px 0 0 0 gainsboro,
+      .item {
+        background-color: gainsboro;
+        position: relative;
+        /* border: 1px dashed black; */
+        box-shadow:
+        0 -4px 0 0 gainsboro,
+        0 4px 0 0 gainsboro,
+        -4px 0 0 0 gainsboro,
+        4px 0 0 0 gainsboro,
 
-      0 0 0 4px whitesmoke,
-      0 -8px 0 0 whitesmoke,
-      0 8px 0 0 whitesmoke,
-      -8px 0 0 0 whitesmoke,
-      8px 0 0 0 whitesmoke;
-      /* background: white; */
-      height: 95vh;
-    }
+        0 0 0 4px whitesmoke,
+        0 -8px 0 0 whitesmoke,
+        0 8px 0 0 whitesmoke,
+        -8px 0 0 0 whitesmoke,
+        8px 0 0 0 whitesmoke;
+        /* background: white; */
+        height: 95vh;
+      }
 
-    .item:hover {
-      background-color: ;
-    }
+      .item:hover {
+        background-color: ;
+      }
 
-    .item img {
-      width: 128px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      image-rendering: pixelated;
-    }
+      .item img {
+        width: 128px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        image-rendering: pixelated;
+      }
 
-    .title {
-      box-shadow:
-      0 -4px 0 0 white,
-      0 4px 0 0 white,
-      -4px 0 0 0 white,
-      4px 0 0 0 white,
+      .title {
+        box-shadow:
+        0 -4px 0 0 white,
+        0 4px 0 0 white,
+        -4px 0 0 0 white,
+        4px 0 0 0 white,
 
-      0 0 0 4px black,
-      0 -8px 0 0 black,
-      0 8px 0 0 black,
-      -8px 0 0 0 black,
-      8px 0 0 0 black;
-      margin: 30px auto;
-      padding: 0 5px;
-      width: 25vh;
-      height: auto;
-      /* text-align: center; */
-      /* position: relative; */
-    }
+        0 0 0 4px black,
+        0 -8px 0 0 black,
+        0 8px 0 0 black,
+        -8px 0 0 0 black,
+        8px 0 0 0 black;
+        margin: 30px auto;
+        padding: 0 5px;
+        width: 25vh;
+        height: auto;
+        /* text-align: center; */
+        /* position: relative; */
+      }
 
-  @media screen and (max-width: 992px) {
-    .grid-container {
-      display: grid;
-      grid-template-columns: auto;
-    }
+      @media screen and (max-width: 992px) {
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto;
+        }
 
-    .item {
-      height: 100vh;
-    }
+        .item {
+          height: 100vh;
+        }
 
-    .item img {
-      width: 50vw;
-      transform: translate(-50%, -50%) rotate(90deg);
-      text-align: center;
-    }
+        .item img {
+          width: 50vw;
+          transform: translate(-50%, -50%) rotate(90deg);
+          text-align: center;
+        }
 
-    .title {
-      transform: rotate(90deg);
-      width: 45vh;
-    }
-  }
-
+        .title {
+          transform: rotate(90deg);
+          width: 45vh;
+        }
+      }
     </style>
   </head>
 
   <body>
-    <p style="text-align: center; padding: 40px 0; text-decoration: underline;">Please rotate your phone</p>
+    <p style="text-align: center; padding: 40px 0; text-decoration: underline;">Please rotate your phone <br>and scroll</p>
       <div class="title" style="margin: 40vh auto;"> Welcome to the Gallery!
        </div>
 
@@ -147,21 +146,6 @@
          All I need you to help with is to choose one of the following images, ready to display it during
          the crit via your phone.
        </div>
-
-    <div class="text-container">
-          <!-- <p>
-            19-Sep-1982 11:44 Scott E Fahlman <br>
-            From: Scott E Fahlman  &#x3c;Fahlman at Cmu-20c&#62; <br>
-            I propose that the following character sequence for joke makers: <br>
-            :-) <br>
-            Read it sideways. Actually, it is probably more economical to mark things that are NOT jokes,
-            given current trends. For this, use <br>
-            :-(
-          </p> -->
-          <!-- <p> Hello World! <br> -->
-          <!-- </p> -->
-
-    </div>
 
     <div class="grid-container">
 
@@ -188,6 +172,67 @@
       </div>
 
       <div class="item">
+        <img class="sun" src="sun/1.gif">
+        <img class="sun" src="sun/2.gif">
+        <img class="sun" src="sun/3.gif">
+        <img class="sun" src="sun/4.gif">
+        <img class="sun" src="sun/5.gif">
+        <img class="sun" src="sun/6.gif">
+        <img class="sun" src="sun/7.gif">
+        <img class="sun" src="sun/8.gif">
+        <img class="sun" src="sun/9.gif">
+        <img class="sun" src="sun/10.png">
+        <img class="sun" src="sun/11.png">
+        <img class="sun" src="sun/12.gif">
+        <img class="sun" src="sun/13.gif">
+        <img class="sun" src="sun/15.gif">
+        <img class="sun" src="sun/16.gif">
+        <img class="sun" src="sun/17.gif">
+        <img class="sun" src="sun/18.gif">
+        <img class="sun" src="sun/19.png">
+        <img class="sun" src="sun/20.png">
+        <img class="sun" src="sun/21.png">
+        <img class="sun" src="sun/22.png">
+      </div>
+
+
+
+      <div class="item">
+        <img class="drop" src="drop/1.gif" >
+        <img class="drop" src="drop/2.gif" >
+        <img class="drop" src="drop/3.gif" >
+        <img class="drop" src="drop/4.gif" >
+        <img class="drop" src="drop/5.gif" >
+        <img class="drop" src="drop/6.png" >
+        <img class="drop" src="drop/7.png" >
+        <img class="drop" src="drop/8.png" >
+        <img class="drop" src="drop/10.png" >
+      </div>
+
+      <div class="item">
+        <img class="raining" src="raining/1.gif">
+        <img class="raining" src="raining/2.gif">
+        <img class="raining" src="raining/3.gif">
+        <img class="raining" src="raining/4.gif">
+        <img class="raining" src="raining/5.gif">
+        <img class="raining" src="raining/6.gif">
+        <img class="raining" src="raining/7.gif">
+        <img class="raining" src="raining/8.gif">
+        <img class="raining" src="raining/9.png">
+        <img class="raining" src="raining/10.gif">
+        <img class="raining" src="raining/11.gif">
+        <img class="raining" src="raining/12.gif">
+        <img class="raining" src="raining/13.gif">
+        <img class="raining" src="raining/14.gif">
+        <img class="raining" src="raining/15.gif">
+        <img class="raining" src="raining/16.png">
+        <img class="raining" src="raining/17.png">
+        <img class="raining" src="raining/18.png">
+        <img class="raining" src="raining/19.png">
+        <img class="raining" src="raining/20.png">
+      </div>
+
+      <div class="item">
         <img class="cherryblossom" src="cherryblossom/1.gif" >
         <img class="cherryblossom" src="cherryblossom/2.gif" >
         <img class="cherryblossom" src="cherryblossom/3.gif" >
@@ -202,6 +247,42 @@
         <img class="cherryblossom" src="cherryblossom/12.png" >
         <img class="cherryblossom" src="cherryblossom/13.png" >
       </div>
+
+
+      <div class="item">
+        <img class="rose" src="rose/1.gif">
+        <img class="rose" src="rose/2.gif">
+        <img class="rose" src="rose/3.gif">
+        <img class="rose" src="rose/4.gif">
+        <img class="rose" src="rose/5.gif">
+        <img class="rose" src="rose/6.gif">
+        <img class="rose" src="rose/7.gif">
+        <img class="rose" src="rose/8.png">
+        <img class="rose" src="rose/9.png">
+        <img class="rose" src="rose/10.png">
+        <img class="rose" src="rose/11.png">
+        <img class="rose" src="rose/12.png">
+        <img class="rose" src="rose/13.png">
+      </div>
+
+      <div class="item">
+        <img class="ski" src="ski/1.gif">
+        <img class="ski" src="ski/2.gif">
+        <img class="ski" src="ski/3.png">
+        <img class="ski" src="ski/4.gif">
+        <img class="ski" src="ski/5.gif">
+        <img class="ski" src="ski/6.gif">
+        <img class="ski" src="ski/7.gif">
+        <img class="ski" src="ski/8.gif">
+        <img class="ski" src="ski/9.gif">
+        <img class="ski" src="ski/10.png">
+        <img class="ski" src="ski/11.gif">
+        <img class="ski" src="ski/12.png">
+        <img class="ski" src="ski/13.png">
+        <img class="ski" src="ski/14.png">
+        <img class="ski" src="ski/15.png">
+      </div>
+
 
       <div class="item">
         <img class="surfing" src="surfing/1.gif" >
@@ -238,6 +319,53 @@
       </div>
 
       <div class="item">
+        <img class="music" src="music/1.gif">
+        <img class="music" src="music/2.gif">
+        <img class="music" src="music/3.gif">
+        <img class="music" src="music/4.gif">
+        <img class="music" src="music/5.gif">
+        <img class="music" src="music/6.gif">
+        <img class="music" src="music/7.gif">
+        <img class="music" src="music/8.gif">
+        <img class="music" src="music/9.gif">
+        <img class="music" src="music/10.gif">
+        <img class="music" src="music/11.gif">
+        <img class="music" src="music/12.png">
+        <img class="music" src="music/13.png">
+        <img class="music" src="music/14.png">
+        <img class="music" src="music/15.png">
+        <img class="music" src="music/16.png">
+        <img class="music" src="music/17.png">
+        <img class="music" src="music/18.png">
+      </div>
+
+
+      <div class="item">
+        <img class="heart" src="heart/1.gif">
+        <img class="heart" src="heart/2.gif">
+        <img class="heart" src="heart/3.gif">
+        <img class="heart" src="heart/4.gif">
+        <img class="heart" src="heart/5.gif">
+        <img class="heart" src="heart/6.gif">
+        <img class="heart" src="heart/7.gif">
+        <img class="heart" src="heart/8.png">
+        <img class="heart" src="heart/9.gif">
+        <img class="heart" src="heart/10.gif">
+        <img class="heart" src="heart/11.gif">
+        <img class="heart" src="heart/12.png">
+        <img class="heart" src="heart/13.gif">
+        <img class="heart" src="heart/14.gif">
+        <img class="heart" src="heart/15.gif">
+        <img class="heart" src="heart/16.png">
+        <img class="heart" src="heart/17.png">
+        <img class="heart" src="heart/18.png">
+        <img class="heart" src="heart/19.png">
+        <img class="heart" src="heart/20.png">
+      </div>
+
+
+
+      <div class="item">
         <img class="smile" src="smile/1.gif">
         <img class="smile" src="smile/2.gif">
         <img class="smile" src="smile/3.gif">
@@ -256,6 +384,71 @@
         <img class="smile" src="smile/16.gif">
         <img class="smile" src="smile/17.png">
       </div>
+
+      <div class="item">
+        <img class="sad" src="sad/1.gif">
+        <img class="sad" src="sad/2.gif">
+        <img class="sad" src="sad/3.gif">
+        <img class="sad" src="sad/4.png">
+        <img class="sad" src="sad/5.gif">
+        <img class="sad" src="sad/6.gif">
+        <img class="sad" src="sad/7.gif">
+        <img class="sad" src="sad/8.gif">
+        <img class="sad" src="sad/9.gif">
+        <img class="sad" src="sad/10.gif">
+        <img class="sad" src="sad/11.gif">
+        <img class="sad" src="sad/12.gif">
+        <img class="sad" src="sad/13.png">
+        <img class="sad" src="sad/14.png">
+        <img class="sad" src="sad/15.png">
+        <img class="sad" src="sad/16.png">
+      </div>
+
+
+
+      <div class="item">
+        <img class="cellphone" src="cellphone/1.gif">
+        <img class="cellphone" src="cellphone/2.gif">
+        <img class="cellphone" src="cellphone/3.gif">
+        <img class="cellphone" src="cellphone/4.gif">
+        <img class="cellphone" src="cellphone/5.png">
+        <img class="cellphone" src="cellphone/6.gif">
+        <img class="cellphone" src="cellphone/7.gif">
+        <img class="cellphone" src="cellphone/8.gif">
+        <img class="cellphone" src="cellphone/9.gif">
+        <img class="cellphone" src="cellphone/10.gif">
+        <img class="cellphone" src="cellphone/11.gif">
+        <img class="cellphone" src="cellphone/12.png">
+        <img class="cellphone" src="cellphone/13.png">
+        <img class="cellphone" src="cellphone/14.png">
+        <img class="cellphone" src="cellphone/15.png">
+        <img class="cellphone" src="cellphone/16.png">
+        <img class="cellphone" src="cellphone/17.png">
+      </div>
+
+      <div class="item">
+        <img class="telephone" src="telephone/1.gif">
+        <img class="telephone" src="telephone/2.gif">
+        <img class="telephone" src="telephone/3.gif">
+        <img class="telephone" src="telephone/4.gif">
+        <img class="telephone" src="telephone/5.gif">
+        <img class="telephone" src="telephone/6.gif">
+        <img class="telephone" src="telephone/7.png">
+        <img class="telephone" src="telephone/8.gif">
+        <img class="telephone" src="telephone/9.gif">
+        <img class="telephone" src="telephone/10.gif">
+        <img class="telephone" src="telephone/11.gif">
+        <img class="telephone" src="telephone/12.gif">
+        <img class="telephone" src="telephone/13.png">
+        <img class="telephone" src="telephone/14.png">
+        <img class="telephone" src="telephone/15.png">
+        <img class="telephone" src="telephone/16.png">
+        <img class="telephone" src="telephone/17.png">
+        <img class="telephone" src="telephone/18.gif">
+        <img class="telephone" src="telephone/19.gif">
+        <img class="telephone" src="telephone/20.png">
+      </div>
+
     </div>
   </body>
 
@@ -270,7 +463,7 @@
       surfingIndex++;
       if (surfingIndex > x.length) {surfingIndex = 1}
       x[surfingIndex-1].style.display = "block";
-      setTimeout(surfing,200);
+      setTimeout(surfing,160);
     }
 
     var cloudIndex = 0;
@@ -282,7 +475,7 @@
       cloudIndex++;
       if (cloudIndex > x.length) {cloudIndex = 1}
       x[cloudIndex-1].style.display = "block";
-      setTimeout(cloud,200);
+      setTimeout(cloud,160);
     }
 
     var cherryblossomIndex = 0;
@@ -294,7 +487,7 @@
       cherryblossomIndex++;
       if (cherryblossomIndex > x.length) {cherryblossomIndex = 1}
       x[cherryblossomIndex-1].style.display = "block";
-      setTimeout(cherryblossom,200);
+      setTimeout(cherryblossom,160);
     }
 
     var bunnygirlsIndex = 0;
@@ -307,7 +500,7 @@
       if (bunnygirlsIndex > x.length) {bunnygirlsIndex = 1}
       x[bunnygirlsIndex-1].style.display = "block";
       // console.log(x[bunnygirlsIndex-1]);
-      setTimeout(bunnygirls,200);
+      setTimeout(bunnygirls,160);
     }
 
     var smileIndex = 0;
@@ -319,17 +512,145 @@
       smileIndex++;
       if (smileIndex > x.length) {smileIndex = 1}
       x[smileIndex-1].style.display = "block";
-      setTimeout(smile,200);
+      setTimeout(smile,160);
     }
+
+    var sadIndex = 0;
+    function sad() {
+      var x = document.getElementsByClassName ("sad");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      sadIndex++;
+      if (sadIndex > x.length) {sadIndex = 1}
+      x[sadIndex-1].style.display = "block";
+      setTimeout(sad,160);
+    }
+
+    var heartIndex = 0;
+    function heart() {
+      var x = document.getElementsByClassName ("heart");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      heartIndex++;
+      if (heartIndex > x.length) {heartIndex = 1}
+      x[heartIndex-1].style.display = "block";
+      setTimeout(heart,160);
+    }
+
+    var cellphoneIndex = 0;
+    function cellphone() {
+      var x = document.getElementsByClassName ("cellphone");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      cellphoneIndex++;
+      if (cellphoneIndex > x.length) {cellphoneIndex = 1}
+      x[cellphoneIndex-1].style.display = "block";
+      setTimeout(cellphone,160);
+    }
+
+    var telephoneIndex = 0;
+    function telephone() {
+      var x = document.getElementsByClassName ("telephone");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      telephoneIndex++;
+      if (telephoneIndex > x.length) {telephoneIndex = 1}
+      x[telephoneIndex-1].style.display = "block";
+      setTimeout(telephone,160);
+    }
+
+    var skiIndex = 0;
+    function ski() {
+      var x = document.getElementsByClassName ("ski");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      skiIndex++;
+      if (skiIndex > x.length) {skiIndex = 1}
+      x[skiIndex-1].style.display = "block";
+      setTimeout(ski,160);
+    }
+
+    var roseIndex = 0;
+    function rose() {
+      var x = document.getElementsByClassName ("rose");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      roseIndex++;
+      if (roseIndex > x.length) {roseIndex = 1}
+      x[roseIndex-1].style.display = "block";
+      setTimeout(rose,160);
+    }
+
+    var dropIndex = 0;
+    function drop() {
+      var x = document.getElementsByClassName ("drop");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      dropIndex++;
+      if (dropIndex > x.length) {dropIndex = 1}
+      x[dropIndex-1].style.display = "block";
+      setTimeout(drop,160);
+    }
+
+    var rainingIndex = 0;
+    function raining() {
+      var x = document.getElementsByClassName ("raining");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      rainingIndex++;
+      if (rainingIndex > x.length) {rainingIndex = 1}
+      x[rainingIndex-1].style.display = "block";
+      setTimeout(raining,160);
+    }
+
+    var sunIndex = 0;
+    function sun() {
+      var x = document.getElementsByClassName ("sun");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      sunIndex++;
+      if (sunIndex > x.length) {sunIndex = 1}
+      x[sunIndex-1].style.display = "block";
+      setTimeout(sun,160);
+    }
+
+    var musicIndex = 0;
+    function music() {
+      var x = document.getElementsByClassName ("music");
+      for ( var i = 0; i < x.length; i++ ) {
+        x[i].style.display = "none";
+      }
+      musicIndex++;
+      if (musicIndex > x.length) {musicIndex = 1}
+      x[musicIndex-1].style.display = "block";
+      setTimeout(music,160);
+    }
+
 
     surfing();
     bunnygirls();
     cloud();
     cherryblossom();
     smile ();
-
-
-
+    sad();
+    heart();
+    cellphone();
+    telephone();
+    ski();
+    rose();
+    drop();
+    raining();
+    sun();
+    music();
 
 
 
