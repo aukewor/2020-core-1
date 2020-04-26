@@ -20,7 +20,7 @@
       }
 
       body {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 2;
         color: black;
         /* font-family: 'Space Mono', monospace; */
@@ -91,7 +91,7 @@
         image-rendering: pixelated;
       }
 
-      .title {
+      .title, .text{
         box-shadow:
         0 -8px 0 0 white,
         0 8px 0 0 white,
@@ -112,6 +112,10 @@
       }
 
       @media screen and (max-width: 992px) {
+        body {
+          font-size: 48px;
+        }
+
         .grid-container {
           display: grid;
           grid-template-columns: auto;
@@ -129,26 +133,35 @@
 
         .title {
           transform: rotate(90deg);
-          height:80vw;
           width: auto;
-          margin: 200px auto;
+          margin: 1200px auto;
+        }
+        .text {
+          /* transform: rotate(90deg);
+          transform-origin: top left; */
+          height: auto;
+          width: 80vw;
+          margin:10vh auto;
         }
       }
     </style>
   </head>
 
   <body>
-    <p style="text-align: center; padding: 40px 0; text-decoration: underline;">Please rotate your phone <br>and scroll</p>
+    <div class="text" >
+      Thanks for participating in this project.
+      What I need you to help with is to select one of the images below and prepare it to be displayed during
+      the crit via your phone.
+    </div>
+
+    <div class="text" >Please rotate your phone <br>and scroll &#8595;</div>
       <div class="title" > Welcome to the Gallery!
        </div>
 
-       <div class="title" >
-         Thanks for participating in this project.
-         What I need you to help with is to select one of the images below and prepare it to be displayed during
-         the crit via your phone.
-       </div>
+
 
     <div class="grid-container">
+
 
       <div class="item">
         <img class="cloud" src="cloud/1.gif" >
